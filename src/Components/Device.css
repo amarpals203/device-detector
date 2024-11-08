@@ -1,0 +1,70 @@
+.device-container {
+  padding: 25px;
+  background: linear-gradient(145deg, #f0f7ff, #588fca); 
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05); 
+  text-align: center;
+  max-width: 650px;
+  margin: 200px auto;
+  transition: transform 0.3s ease-in-out; 
+
+.device-container:hover {
+  transform: translateY(-10px); 
+}
+
+.device-title {
+  font-size: 1.75em;
+  font-weight: bold;
+  color: #0b0a0a;
+  margin-bottom: 15px;
+  text-transform: capitalize; 
+  font-family: 'Roboto', sans-serif;
+}
+
+.device-message {
+  font-size: 1.1em;
+  color: #100e0e;
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .device-container {
+    max-width: 90%;
+    padding: 20px;
+  }
+  .device-title {
+    font-size: 1.5em;
+  }
+  .device-message {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .device-container {
+    max-width: 80%;
+    padding: 25px;
+  }
+  .device-title {
+    font-size: 1.65em;
+  }
+  .device-message {
+    font-size: 1.05em;
+  }
+}
+
+@media (min-width: 1025px) {
+  .device-container {
+    max-width: 350px;
+    padding: 25px;
+  }
+  .device-title {
+    font-size: 1.75em;
+  }
+  .device-message {
+    font-size: 1.1em;
+  }
+}
+}
