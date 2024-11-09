@@ -1,70 +1,64 @@
 .device-container {
-  padding: 25px;
-  background: linear-gradient(145deg, #f0f7ff, #588fca); 
-  border-radius: 15px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05); 
-  text-align: center;
-  max-width: 650px;
-  margin: 200px auto;
-  transition: transform 0.3s ease-in-out; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #a3aebd; 
+  padding: 20px;
+}
 
-.device-container:hover {
-  transform: translateY(-10px); 
+.device-card {
+  background-color: #5e817e; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
 }
 
 .device-title {
-  font-size: 1.75em;
-  font-weight: bold;
-  color: #0b0a0a;
-  margin-bottom: 15px;
-  text-transform: capitalize; 
-  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #131212;
 }
 
 .device-message {
-  font-size: 1.1em;
-  color: #100e0e;
-  font-family: 'Segoe UI', sans-serif;
-  margin-top: 10px;
-  line-height: 1.5;
+  font-size: 1.2rem;
+  color: #110e0e;
+  margin-bottom: 20px;
 }
 
-@media (max-width: 600px) {
-  .device-container {
-    max-width: 90%;
+.device-info {
+  font-size: 1rem;
+  color: #141212;
+  margin-top: 20px;
+}
+
+.device-info strong {
+  font-weight: 600;
+  color: #0f0d0d;
+}
+
+.device-message span {
+  font-weight: bold;
+  color: #2d9cdb; 
+}
+
+.device-title,
+.device-info {
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .device-card {
     padding: 20px;
   }
   .device-title {
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
   .device-message {
-    font-size: 1em;
+    font-size: 1rem;
   }
-}
-
-@media (min-width: 601px) and (max-width: 1024px) {
-  .device-container {
-    max-width: 80%;
-    padding: 25px;
-  }
-  .device-title {
-    font-size: 1.65em;
-  }
-  .device-message {
-    font-size: 1.05em;
-  }
-}
-
-@media (min-width: 1025px) {
-  .device-container {
-    max-width: 350px;
-    padding: 25px;
-  }
-  .device-title {
-    font-size: 1.75em;
-  }
-  .device-message {
-    font-size: 1.1em;
-  }
-}
 }
